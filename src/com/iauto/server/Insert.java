@@ -16,7 +16,7 @@ public class Insert {
         try {
             statement = con.createStatement();
             if (flag == 1 ) {
-                sql = "insert into visit.jingdian values( \'" + paths[0] + " \',  \'" + paths[1] + " \', \'" + paths[2] + " \',\'" + paths[3] + " \',\'" + paths[4] + " \');";
+                sql = "insert into visit.jingdian(地址,简介,特色风味,旅游时间,口碑网评) values( \'" + paths[0] + " \',  \'" + paths[1] + " \', \'" + paths[2] + " \',\'" + paths[3] + " \',\'" + paths[4] + " \');";
             }
             if (flag == 2){
                 sql = "insert into visit.orderhotel(姓名,性别,身份证号,手机号码,酒店名称,房间规格,入住人,入住日期,退住日期) values( \'" + paths[1] + " \', \'" + paths[2] + "\',\'" + paths[3] + " \',\'" + paths[4] + " \',\'" + paths[0] + " \',\'" + paths[6] + " \',\'" + paths[5] + " \',\'" + paths[7] + " \',\'" +  paths[8] + " \');";
