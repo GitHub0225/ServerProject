@@ -35,7 +35,7 @@ public class Search {
             try{
                 statement = con.createStatement();
 
-                sql = "select * from " + table + " where 手机号码 = " + "'" + content + "';";
+                sql = "select * from " + table + " where 身份证号 = " + "'" + content + "';";
                 ResultSet rs = statement.executeQuery(sql);
                 string = "";
                 while(rs.next()){
